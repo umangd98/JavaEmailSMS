@@ -27,7 +27,7 @@ public class Controller
 //        URI uri = new URI(baseUrl);
 //
 //        SMSBody body = new SMSBody();
-//        body.setAuthorization("jbLpgtd1y98cQnUrh2fazs6C4vo7ENBwekHYORmGqWDMPTKFIX2fljCqGiLtEAI0pvRwhnZ3OQ5Yz9u7");
+//        body.setAuthorization("");
 //        body.setSender_id("FSTSMS");
 //        body.setLanguage("english");
 //        body.setMessage(message);
@@ -38,7 +38,7 @@ public class Controller
 //
 //            restTemplate.exchange(uri, HttpMethod.GET, requestEntity, String.class);
 
-        HttpResponse response = Unirest.get("https://www.fast2sms.com/dev/bulk?authorization=jbLpgtd1y98cQnUrh2fazs6C4vo7ENBwekHYORmGqWDMPTKFIX2fljCqGiLtEAI0pvRwhnZ3OQ5Yz9u7&sender_id=FSTSMS&message=This%20is%20a%20test%20message&language=english&route=p&numbers=9205834773")
+        HttpResponse response = Unirest.get("https://www.fast2sms.com/dev/bulk?authorization=&sender_id=FSTSMS&message=This%20is%20a%20test%20message&language=english&route=p&numbers=9205834773")
                 .header("cache-control", "no-cache")
                 .asString();
 
